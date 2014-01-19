@@ -26,15 +26,11 @@
         "bin-dir": "bin"
     },
     "scripts": {
-        "post-install-cmd": [
-            "mkdir -p bin",
-            "rm -f bin/phr",
-            "ln -s ../vendor/pawka/phrozn/bin/phr.php bin/phr",
+        "post-update-cmd": [
+            "php bin/phing compile"
         ],
         "post-install-cmd": [
-            "mkdir -p bin",
-            "rm -f bin/phr",
-            "ln -s ../vendor/pawka/phrozn/bin/phr.php bin/phr"
+            "php bin/phing compile"
         ]
     }
 }

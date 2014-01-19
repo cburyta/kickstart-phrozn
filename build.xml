@@ -13,6 +13,19 @@
     </target>
 
     <!-- ========================================================================== -->
+    <!-- Target: reset                                                              -->
+    <!-- Warning: very destructive! Used mainly to                                  -->
+    <!-- reset the repo for kickstart development                                   -->
+    <!-- ========================================================================== -->
+    <target
+        name="cleanup"
+        description="Destroy any files that would be used for site content">
+        <delete dir="src" />
+        <delete dir="public" />
+    </target>
+
+
+    <!-- ========================================================================== -->
     <!-- Target: init                                                               -->
     <!-- Initial project init, can be used to create the Phrozn structure from      -->
     <!-- scratch so you can get going quickly. Not used often except initially      -->
